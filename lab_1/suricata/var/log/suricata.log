@@ -1,0 +1,206 @@
+[17 - Suricata-Main] 2026-01-10 12:00:10 Notice: suricata: This is Suricata version 8.0.2 RELEASE running in SYSTEM mode
+[17 - Suricata-Main] 2026-01-10 12:00:10 Info: cpu: CPUs/cores online: 16
+[17 - Suricata-Main] 2026-01-10 12:00:10 Info: suricata: Setting engine mode to IDS mode by default
+[18 - Suricata-Main] 2026-01-10 12:00:10 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[18 - Suricata-Main] 2026-01-10 12:00:10 Info: logopenfile: eve-log output device (regular) initialized: /var/log/suricata/eve.json
+[18 - Suricata-Main] 2026-01-10 12:00:10 Warning: counters: stats are enabled but no loggers are active
+[18 - Suricata-Main] 2026-01-10 12:00:10 Info: detect: 1 rule files processed. 2 rules successfully loaded, 0 rules failed, 0 rules skipped
+[18 - Suricata-Main] 2026-01-10 12:00:10 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[18 - Suricata-Main] 2026-01-10 12:00:10 Info: detect: 2 signatures processed. 1 are IP-only rules, 0 are inspecting packet payload, 1 inspect application layer, 0 are decoder event only
+[18 - Suricata-Main] 2026-01-10 12:00:10 Info: runmodes: eth0: creating 1 thread
+[20 - W#01-eth0] 2026-01-10 12:00:10 Info: ioctl: eth0: MTU 1500
+[18 - Suricata-Main] 2026-01-10 12:00:10 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[13 - Suricata-Main] 2026-01-10 12:10:32 Notice: suricata: This is Suricata version 8.0.2 RELEASE running in SYSTEM mode
+[13 - Suricata-Main] 2026-01-10 12:10:32 Info: cpu: CPUs/cores online: 16
+[13 - Suricata-Main] 2026-01-10 12:10:32 Info: suricata: Setting engine mode to IDS mode by default
+[14 - Suricata-Main] 2026-01-10 12:10:32 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[14 - Suricata-Main] 2026-01-10 12:10:32 Info: logopenfile: eve-log output device (regular) initialized: /var/log/suricata/eve.json
+[14 - Suricata-Main] 2026-01-10 12:10:32 Warning: counters: stats are enabled but no loggers are active
+[14 - Suricata-Main] 2026-01-10 12:10:32 Info: detect: 1 rule files processed. 2 rules successfully loaded, 0 rules failed, 0 rules skipped
+[14 - Suricata-Main] 2026-01-10 12:10:32 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[14 - Suricata-Main] 2026-01-10 12:10:32 Info: detect: 2 signatures processed. 1 are IP-only rules, 0 are inspecting packet payload, 1 inspect application layer, 0 are decoder event only
+[14 - Suricata-Main] 2026-01-10 12:10:32 Info: runmodes: eth0: creating 1 thread
+[16 - W#01-eth0] 2026-01-10 12:10:32 Info: ioctl: eth0: MTU 1500
+[14 - Suricata-Main] 2026-01-10 12:10:33 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[13 - Suricata-Main] 2026-01-10 12:24:19 Notice: suricata: This is Suricata version 8.0.2 RELEASE running in SYSTEM mode
+[13 - Suricata-Main] 2026-01-10 12:24:19 Info: cpu: CPUs/cores online: 16
+[13 - Suricata-Main] 2026-01-10 12:24:19 Info: suricata: Setting engine mode to IDS mode by default
+[14 - Suricata-Main] 2026-01-10 12:24:19 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[14 - Suricata-Main] 2026-01-10 12:24:19 Info: logopenfile: eve-log output device (regular) initialized: /var/log/suricata/eve.json
+[14 - Suricata-Main] 2026-01-10 12:24:19 Warning: counters: stats are enabled but no loggers are active
+[14 - Suricata-Main] 2026-01-10 12:24:19 Info: detect: 1 rule files processed. 2 rules successfully loaded, 0 rules failed, 0 rules skipped
+[14 - Suricata-Main] 2026-01-10 12:24:19 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[14 - Suricata-Main] 2026-01-10 12:24:19 Info: detect: 2 signatures processed. 1 are IP-only rules, 0 are inspecting packet payload, 1 inspect application layer, 0 are decoder event only
+[14 - Suricata-Main] 2026-01-10 12:24:19 Info: runmodes: eth0: creating 1 thread
+[16 - W#01-eth0] 2026-01-10 12:24:19 Info: ioctl: eth0: MTU 1500
+[14 - Suricata-Main] 2026-01-10 12:24:19 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[13 - Suricata-Main] 2026-01-10 12:25:46 Notice: suricata: This is Suricata version 8.0.2 RELEASE running in SYSTEM mode
+[13 - Suricata-Main] 2026-01-10 12:25:46 Info: cpu: CPUs/cores online: 16
+[13 - Suricata-Main] 2026-01-10 12:25:46 Info: suricata: Setting engine mode to IDS mode by default
+[14 - Suricata-Main] 2026-01-10 12:25:46 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[14 - Suricata-Main] 2026-01-10 12:25:46 Info: logopenfile: eve-log output device (regular) initialized: /var/log/suricata/eve.json
+[14 - Suricata-Main] 2026-01-10 12:25:46 Warning: counters: stats are enabled but no loggers are active
+[14 - Suricata-Main] 2026-01-10 12:25:46 Info: detect: 1 rule files processed. 2 rules successfully loaded, 0 rules failed, 0 rules skipped
+[14 - Suricata-Main] 2026-01-10 12:25:46 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[14 - Suricata-Main] 2026-01-10 12:25:46 Info: detect: 2 signatures processed. 1 are IP-only rules, 0 are inspecting packet payload, 1 inspect application layer, 0 are decoder event only
+[14 - Suricata-Main] 2026-01-10 12:25:46 Info: runmodes: eth0: creating 1 thread
+[16 - W#01-eth0] 2026-01-10 12:25:46 Info: ioctl: eth0: MTU 1500
+[14 - Suricata-Main] 2026-01-10 12:25:46 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[13 - Suricata-Main] 2026-01-10 12:27:17 Notice: suricata: This is Suricata version 8.0.2 RELEASE running in SYSTEM mode
+[13 - Suricata-Main] 2026-01-10 12:27:17 Info: cpu: CPUs/cores online: 16
+[13 - Suricata-Main] 2026-01-10 12:27:17 Info: suricata: Setting engine mode to IDS mode by default
+[14 - Suricata-Main] 2026-01-10 12:27:18 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[14 - Suricata-Main] 2026-01-10 12:27:18 Info: logopenfile: eve-log output device (regular) initialized: /var/log/suricata/eve.json
+[14 - Suricata-Main] 2026-01-10 12:27:18 Warning: counters: stats are enabled but no loggers are active
+[14 - Suricata-Main] 2026-01-10 12:27:18 Info: detect: 1 rule files processed. 2 rules successfully loaded, 0 rules failed, 0 rules skipped
+[14 - Suricata-Main] 2026-01-10 12:27:18 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[14 - Suricata-Main] 2026-01-10 12:27:18 Info: detect: 2 signatures processed. 1 are IP-only rules, 0 are inspecting packet payload, 1 inspect application layer, 0 are decoder event only
+[14 - Suricata-Main] 2026-01-10 12:27:18 Info: runmodes: eth0: creating 1 thread
+[16 - W#01-eth0] 2026-01-10 12:27:18 Info: ioctl: eth0: MTU 1500
+[14 - Suricata-Main] 2026-01-10 12:27:18 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[58 - Suricata-Main] 2026-01-10 15:10:35 Notice: suricata: This is Suricata version 8.0.2 RELEASE running in SYSTEM mode
+[58 - Suricata-Main] 2026-01-10 15:10:35 Info: cpu: CPUs/cores online: 16
+[58 - Suricata-Main] 2026-01-10 15:10:35 Info: suricata: Setting engine mode to IDS mode by default
+[58 - Suricata-Main] 2026-01-10 15:10:35 Error: pidfile: pid file '/var/run/suricata.pid' exists and Suricata appears to be running. Aborting!
+[13 - Suricata-Main] 2026-01-10 15:24:54 Notice: suricata: This is Suricata version 8.0.2 RELEASE running in SYSTEM mode
+[13 - Suricata-Main] 2026-01-10 15:24:54 Info: cpu: CPUs/cores online: 16
+[13 - Suricata-Main] 2026-01-10 15:24:54 Info: suricata: Setting engine mode to IDS mode by default
+[14 - Suricata-Main] 2026-01-10 15:24:54 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[14 - Suricata-Main] 2026-01-10 15:24:54 Info: logopenfile: eve-log output device (regular) initialized: /var/log/suricata/eve.json
+[14 - Suricata-Main] 2026-01-10 15:24:54 Warning: counters: stats are enabled but no loggers are active
+[14 - Suricata-Main] 2026-01-10 15:24:54 Info: detect: 1 rule files processed. 2 rules successfully loaded, 0 rules failed, 0 rules skipped
+[14 - Suricata-Main] 2026-01-10 15:24:54 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[14 - Suricata-Main] 2026-01-10 15:24:54 Info: detect: 2 signatures processed. 1 are IP-only rules, 0 are inspecting packet payload, 1 inspect application layer, 0 are decoder event only
+[14 - Suricata-Main] 2026-01-10 15:24:54 Info: runmodes: eth0: creating 1 thread
+[16 - W#01-eth0] 2026-01-10 15:24:55 Info: ioctl: eth0: MTU 1500
+[14 - Suricata-Main] 2026-01-10 15:24:55 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[14 - Suricata-Main] 2026-01-10 15:26:58 Notice: suricata: This is Suricata version 8.0.2 RELEASE running in SYSTEM mode
+[14 - Suricata-Main] 2026-01-10 15:26:58 Info: cpu: CPUs/cores online: 16
+[14 - Suricata-Main] 2026-01-10 15:26:58 Info: suricata: Setting engine mode to IDS mode by default
+[15 - Suricata-Main] 2026-01-10 15:26:58 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[15 - Suricata-Main] 2026-01-10 15:26:58 Info: logopenfile: eve-log output device (regular) initialized: /var/log/suricata/eve.json
+[15 - Suricata-Main] 2026-01-10 15:26:58 Warning: counters: stats are enabled but no loggers are active
+[15 - Suricata-Main] 2026-01-10 15:26:58 Info: detect: 1 rule files processed. 2 rules successfully loaded, 0 rules failed, 0 rules skipped
+[15 - Suricata-Main] 2026-01-10 15:26:58 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[15 - Suricata-Main] 2026-01-10 15:26:58 Info: detect: 2 signatures processed. 1 are IP-only rules, 0 are inspecting packet payload, 1 inspect application layer, 0 are decoder event only
+[17 - W#01-eth0] 2026-01-10 15:26:58 Info: ioctl: eth0: MTU 1500
+[15 - Suricata-Main] 2026-01-10 15:26:58 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[82 - Suricata-Main] 2026-01-10 15:38:19 Notice: suricata: This is Suricata version 8.0.2 RELEASE running in SYSTEM mode
+[82 - Suricata-Main] 2026-01-10 15:38:19 Info: cpu: CPUs/cores online: 16
+[82 - Suricata-Main] 2026-01-10 15:38:19 Error: pidfile: pid file '/var/run/suricata.pid' exists but appears stale. Make sure Suricata is not running and then remove /var/run/suricata.pid. Aborting!
+[14 - Suricata-Main] 2026-01-10 15:39:54 Notice: suricata: This is Suricata version 8.0.2 RELEASE running in SYSTEM mode
+[14 - Suricata-Main] 2026-01-10 15:39:54 Info: cpu: CPUs/cores online: 16
+[14 - Suricata-Main] 2026-01-10 15:39:54 Error: pidfile: pid file '/var/run/suricata.pid' exists but appears stale. Make sure Suricata is not running and then remove /var/run/suricata.pid. Aborting!
+[15 - Suricata-Main] 2026-01-10 15:41:30 Notice: suricata: This is Suricata version 8.0.2 RELEASE running in SYSTEM mode
+[15 - Suricata-Main] 2026-01-10 15:41:30 Info: cpu: CPUs/cores online: 16
+[16 - Suricata-Main] 2026-01-10 15:41:30 Info: suricata: No 'host-mode': suricata is in IPS mode, using default setting 'router'
+[16 - Suricata-Main] 2026-01-10 15:41:30 Info: logopenfile: eve-log output device (regular) initialized: /var/log/suricata/eve.json
+[16 - Suricata-Main] 2026-01-10 15:41:30 Warning: counters: stats are enabled but no loggers are active
+[16 - Suricata-Main] 2026-01-10 15:41:30 Info: detect: 1 rule files processed. 2 rules successfully loaded, 0 rules failed, 0 rules skipped
+[16 - Suricata-Main] 2026-01-10 15:41:30 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[16 - Suricata-Main] 2026-01-10 15:41:30 Info: detect: 2 signatures processed. 1 are IP-only rules, 0 are inspecting packet payload, 1 inspect application layer, 0 are decoder event only
+[18 - W#01-eth0] 2026-01-10 15:41:31 Info: ioctl: eth0: MTU 1500
+[16 - Suricata-Main] 2026-01-10 15:41:31 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[15 - Suricata-Main] 2026-01-10 15:42:36 Notice: suricata: This is Suricata version 8.0.2 RELEASE running in SYSTEM mode
+[15 - Suricata-Main] 2026-01-10 15:42:36 Info: cpu: CPUs/cores online: 16
+[16 - Suricata-Main] 2026-01-10 15:42:36 Info: suricata: No 'host-mode': suricata is in IPS mode, using default setting 'router'
+[16 - Suricata-Main] 2026-01-10 15:42:36 Info: logopenfile: eve-log output device (regular) initialized: /var/log/suricata/eve.json
+[16 - Suricata-Main] 2026-01-10 15:42:36 Warning: counters: stats are enabled but no loggers are active
+[16 - Suricata-Main] 2026-01-10 15:42:36 Info: detect: 1 rule files processed. 2 rules successfully loaded, 0 rules failed, 0 rules skipped
+[16 - Suricata-Main] 2026-01-10 15:42:36 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[16 - Suricata-Main] 2026-01-10 15:42:36 Info: detect: 2 signatures processed. 1 are IP-only rules, 0 are inspecting packet payload, 1 inspect application layer, 0 are decoder event only
+[18 - W#01-eth0] 2026-01-10 15:42:36 Info: ioctl: eth0: MTU 1500
+[16 - Suricata-Main] 2026-01-10 15:42:36 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[15 - Suricata-Main] 2026-01-10 15:48:00 Notice: suricata: This is Suricata version 8.0.2 RELEASE running in SYSTEM mode
+[15 - Suricata-Main] 2026-01-10 15:48:00 Info: cpu: CPUs/cores online: 16
+[16 - Suricata-Main] 2026-01-10 15:48:00 Info: suricata: No 'host-mode': suricata is in IPS mode, using default setting 'router'
+[16 - Suricata-Main] 2026-01-10 15:48:00 Info: logopenfile: eve-log output device (regular) initialized: /var/log/suricata/eve.json
+[16 - Suricata-Main] 2026-01-10 15:48:00 Warning: counters: stats are enabled but no loggers are active
+[16 - Suricata-Main] 2026-01-10 15:48:00 Info: detect: 1 rule files processed. 2 rules successfully loaded, 0 rules failed, 0 rules skipped
+[16 - Suricata-Main] 2026-01-10 15:48:00 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[16 - Suricata-Main] 2026-01-10 15:48:00 Info: detect: 2 signatures processed. 1 are IP-only rules, 0 are inspecting packet payload, 1 inspect application layer, 0 are decoder event only
+[18 - W#01-eth0] 2026-01-10 15:48:00 Info: ioctl: eth0: MTU 1500
+[16 - Suricata-Main] 2026-01-10 15:48:00 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[15 - Suricata-Main] 2026-01-10 15:49:43 Notice: suricata: This is Suricata version 8.0.2 RELEASE running in SYSTEM mode
+[15 - Suricata-Main] 2026-01-10 15:49:43 Info: cpu: CPUs/cores online: 16
+[16 - Suricata-Main] 2026-01-10 15:49:43 Info: suricata: No 'host-mode': suricata is in IPS mode, using default setting 'router'
+[16 - Suricata-Main] 2026-01-10 15:49:43 Info: logopenfile: eve-log output device (regular) initialized: /var/log/suricata/eve.json
+[16 - Suricata-Main] 2026-01-10 15:49:43 Warning: counters: stats are enabled but no loggers are active
+[16 - Suricata-Main] 2026-01-10 15:49:43 Info: detect: 1 rule files processed. 2 rules successfully loaded, 0 rules failed, 0 rules skipped
+[16 - Suricata-Main] 2026-01-10 15:49:43 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[16 - Suricata-Main] 2026-01-10 15:49:43 Info: detect: 2 signatures processed. 1 are IP-only rules, 0 are inspecting packet payload, 1 inspect application layer, 0 are decoder event only
+[18 - W#01-eth0] 2026-01-10 15:49:43 Info: ioctl: eth0: MTU 1500
+[16 - Suricata-Main] 2026-01-10 15:49:43 Notice: threads: Threads created -> W: 1 FM: 1 FR: 1   Engine started.
+[15 - Suricata-Main] 2026-01-10 15:53:08 Notice: suricata: This is Suricata version 8.0.2 RELEASE running in SYSTEM mode
+[15 - Suricata-Main] 2026-01-10 15:53:08 Info: cpu: CPUs/cores online: 16
+[15 - Suricata-Main] 2026-01-10 15:53:08 Info: nfq: NFQ running in standard ACCEPT/DROP mode
+[16 - Suricata-Main] 2026-01-10 15:53:08 Info: suricata: No 'host-mode': suricata is in IPS mode, using default setting 'router'
+[16 - Suricata-Main] 2026-01-10 15:53:08 Info: logopenfile: eve-log output device (regular) initialized: /var/log/suricata/eve.json
+[16 - Suricata-Main] 2026-01-10 15:53:08 Warning: counters: stats are enabled but no loggers are active
+[16 - Suricata-Main] 2026-01-10 15:53:08 Info: detect: 1 rule files processed. 2 rules successfully loaded, 0 rules failed, 0 rules skipped
+[16 - Suricata-Main] 2026-01-10 15:53:08 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[16 - Suricata-Main] 2026-01-10 15:53:08 Info: detect: 2 signatures processed. 1 are IP-only rules, 0 are inspecting packet payload, 1 inspect application layer, 0 are decoder event only
+[16 - Suricata-Main] 2026-01-10 15:53:08 Error: runmodes: The custom type "single" doesn't exist for this runmode type "NFQ".  Please use --list-runmodes to see available custom types for this runmode
+[15 - Suricata-Main] 2026-01-10 15:54:23 Notice: suricata: This is Suricata version 8.0.2 RELEASE running in SYSTEM mode
+[15 - Suricata-Main] 2026-01-10 15:54:23 Info: cpu: CPUs/cores online: 16
+[15 - Suricata-Main] 2026-01-10 15:54:23 Info: nfq: NFQ running in standard ACCEPT/DROP mode
+[16 - Suricata-Main] 2026-01-10 15:54:23 Info: suricata: No 'host-mode': suricata is in IPS mode, using default setting 'router'
+[16 - Suricata-Main] 2026-01-10 15:54:23 Info: logopenfile: eve-log output device (regular) initialized: /var/log/suricata/eve.json
+[16 - Suricata-Main] 2026-01-10 15:54:23 Warning: counters: stats are enabled but no loggers are active
+[16 - Suricata-Main] 2026-01-10 15:54:23 Info: detect: 1 rule files processed. 2 rules successfully loaded, 0 rules failed, 0 rules skipped
+[16 - Suricata-Main] 2026-01-10 15:54:23 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[16 - Suricata-Main] 2026-01-10 15:54:23 Info: detect: 2 signatures processed. 1 are IP-only rules, 0 are inspecting packet payload, 1 inspect application layer, 0 are decoder event only
+[18 - RX-NFQ#1] 2026-01-10 15:54:23 Info: nfq: binding this thread 0 to queue '1'
+[18 - RX-NFQ#1] 2026-01-10 15:54:23 Info: nfq: setting queue length to 4096
+[18 - RX-NFQ#1] 2026-01-10 15:54:23 Info: nfq: setting nfnl bufsize to 6144000
+[16 - Suricata-Main] 2026-01-10 15:54:24 Notice: threads: Threads created -> RX: 1 W: 16 TX: 1 FM: 1 FR: 1   Engine started.
+[15 - Suricata-Main] 2026-01-10 15:55:59 Notice: suricata: This is Suricata version 8.0.2 RELEASE running in SYSTEM mode
+[15 - Suricata-Main] 2026-01-10 15:55:59 Info: cpu: CPUs/cores online: 16
+[15 - Suricata-Main] 2026-01-10 15:55:59 Info: nfq: NFQ running in standard ACCEPT/DROP mode
+[16 - Suricata-Main] 2026-01-10 15:55:59 Info: suricata: No 'host-mode': suricata is in IPS mode, using default setting 'router'
+[16 - Suricata-Main] 2026-01-10 15:55:59 Info: logopenfile: eve-log output device (regular) initialized: /var/log/suricata/eve.json
+[16 - Suricata-Main] 2026-01-10 15:55:59 Warning: counters: stats are enabled but no loggers are active
+[16 - Suricata-Main] 2026-01-10 15:55:59 Info: detect: 1 rule files processed. 2 rules successfully loaded, 0 rules failed, 0 rules skipped
+[16 - Suricata-Main] 2026-01-10 15:55:59 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[16 - Suricata-Main] 2026-01-10 15:55:59 Info: detect: 2 signatures processed. 1 are IP-only rules, 0 are inspecting packet payload, 1 inspect application layer, 0 are decoder event only
+[18 - RX-NFQ#1] 2026-01-10 15:55:59 Info: nfq: binding this thread 0 to queue '1'
+[18 - RX-NFQ#1] 2026-01-10 15:55:59 Info: nfq: setting queue length to 4096
+[18 - RX-NFQ#1] 2026-01-10 15:55:59 Info: nfq: setting nfnl bufsize to 6144000
+[16 - Suricata-Main] 2026-01-10 15:55:59 Notice: threads: Threads created -> RX: 1 W: 16 TX: 1 FM: 1 FR: 1   Engine started.
+[15 - Suricata-Main] 2026-01-10 15:56:54 Notice: suricata: This is Suricata version 8.0.2 RELEASE running in SYSTEM mode
+[15 - Suricata-Main] 2026-01-10 15:56:54 Info: cpu: CPUs/cores online: 16
+[15 - Suricata-Main] 2026-01-10 15:56:54 Info: nfq: NFQ running in standard ACCEPT/DROP mode
+[16 - Suricata-Main] 2026-01-10 15:56:54 Info: suricata: No 'host-mode': suricata is in IPS mode, using default setting 'router'
+[16 - Suricata-Main] 2026-01-10 15:56:54 Info: logopenfile: eve-log output device (regular) initialized: /var/log/suricata/eve.json
+[16 - Suricata-Main] 2026-01-10 15:56:54 Warning: counters: stats are enabled but no loggers are active
+[16 - Suricata-Main] 2026-01-10 15:56:54 Info: detect: 1 rule files processed. 2 rules successfully loaded, 0 rules failed, 0 rules skipped
+[16 - Suricata-Main] 2026-01-10 15:56:54 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[16 - Suricata-Main] 2026-01-10 15:56:54 Info: detect: 2 signatures processed. 1 are IP-only rules, 0 are inspecting packet payload, 1 inspect application layer, 0 are decoder event only
+[18 - RX-NFQ#1] 2026-01-10 15:56:54 Info: nfq: binding this thread 0 to queue '1'
+[18 - RX-NFQ#1] 2026-01-10 15:56:54 Info: nfq: setting queue length to 4096
+[18 - RX-NFQ#1] 2026-01-10 15:56:54 Info: nfq: setting nfnl bufsize to 6144000
+[16 - Suricata-Main] 2026-01-10 15:56:54 Notice: threads: Threads created -> RX: 1 W: 16 TX: 1 FM: 1 FR: 1   Engine started.
+[15 - Suricata-Main] 2026-01-10 15:59:34 Notice: suricata: This is Suricata version 8.0.2 RELEASE running in SYSTEM mode
+[15 - Suricata-Main] 2026-01-10 15:59:34 Info: cpu: CPUs/cores online: 16
+[15 - Suricata-Main] 2026-01-10 15:59:34 Info: nfq: NFQ running in standard ACCEPT/DROP mode
+[16 - Suricata-Main] 2026-01-10 15:59:34 Info: suricata: No 'host-mode': suricata is in IPS mode, using default setting 'router'
+[16 - Suricata-Main] 2026-01-10 15:59:34 Info: logopenfile: eve-log output device (regular) initialized: /var/log/suricata/eve.json
+[16 - Suricata-Main] 2026-01-10 15:59:34 Warning: counters: stats are enabled but no loggers are active
+[16 - Suricata-Main] 2026-01-10 15:59:34 Info: detect: 1 rule files processed. 2 rules successfully loaded, 0 rules failed, 0 rules skipped
+[16 - Suricata-Main] 2026-01-10 15:59:34 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[16 - Suricata-Main] 2026-01-10 15:59:34 Info: detect: 2 signatures processed. 1 are IP-only rules, 0 are inspecting packet payload, 1 inspect application layer, 0 are decoder event only
+[18 - RX-NFQ#1] 2026-01-10 15:59:34 Info: nfq: binding this thread 0 to queue '1'
+[18 - RX-NFQ#1] 2026-01-10 15:59:34 Info: nfq: setting queue length to 4096
+[18 - RX-NFQ#1] 2026-01-10 15:59:34 Info: nfq: setting nfnl bufsize to 6144000
+[16 - Suricata-Main] 2026-01-10 15:59:34 Notice: threads: Threads created -> RX: 1 W: 16 TX: 1 FM: 1 FR: 1   Engine started.
+[139 - Suricata-Main] 2026-01-11 15:00:05 Notice: suricata: This is Suricata version 7.0.8 RELEASE running in SYSTEM mode
+[139 - Suricata-Main] 2026-01-11 15:00:05 Info: cpu: CPUs/cores online: 16
+[139 - Suricata-Main] 2026-01-11 15:00:05 Info: suricata: Running suricata under test mode
+[139 - Suricata-Main] 2026-01-11 15:00:05 Info: suricata: Setting engine mode to IDS mode by default
+[139 - Suricata-Main] 2026-01-11 15:00:05 Info: suricata: No 'host-mode': suricata is in IDS mode, using default setting 'sniffer-only'
+[139 - Suricata-Main] 2026-01-11 15:00:05 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[139 - Suricata-Main] 2026-01-11 15:00:05 Warning: counters: stats are enabled but no loggers are active
+[139 - Suricata-Main] 2026-01-11 15:00:05 Info: detect: 1 rule files processed. 2 rules successfully loaded, 0 rules failed, 0
+[139 - Suricata-Main] 2026-01-11 15:00:05 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[139 - Suricata-Main] 2026-01-11 15:00:05 Info: detect: 2 signatures processed. 1 are IP-only rules, 0 are inspecting packet payload, 1 inspect application layer, 0 are decoder event only
+[139 - Suricata-Main] 2026-01-11 15:00:05 Notice: suricata: Configuration provided was successfully loaded. Exiting.

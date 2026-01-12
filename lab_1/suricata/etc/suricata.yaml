@@ -1,0 +1,63 @@
+%YAML 1.1
+---
+runmode: workers
+# NFQUEUE для IPS
+nfqueue:
+  mode: accept
+  repeat-mark: 1
+  repeat-mask: 1
+  bypass-mark: 2
+  bypass-mask: 2
+  queue-balance:
+    - 0-3
+
+# Правила
+rule-files:
+  - /etc/suricata/rules/local.rules
+
+# EVE — основной лог
+outputs:
+  - eve-log:
+      enabled: yes
+      filetype: regular
+      filename: eve.json
+      types:
+        - alert:
+            metadata: yes
+            tagged-packets: yes
+        - drop:
+            metadata: yes
+            tagged-packets: yes
+        - http:
+            extended: yes
+        - dns:
+            query: yes
+            answer: yes
+
+# Отключаем лишнее для простоты
+classification-file: /etc/suricata/classification.config
+reference-config-file: /etc/suricata/reference.config
+
+app-layer:
+  protocols:
+    http:
+      enabled: yes
+      extended: yes
+    dns:
+      enabled: yes
+      ports: [53]
+    tls:
+      enabled: yes
+
+# Логирование
+logging:
+  default-log-level: info
+  default-output-filter:
+  outputs:
+    - console:
+        enabled: yes
+        level: info
+    - file:
+        enabled: yes
+        level: info
+        filename: suricata.log

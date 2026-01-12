@@ -1,0 +1,55 @@
+services:
+  suricata:
+    image: openeuler/suricata:latest
+    container_name: suricata_ips
+    privileged: true
+    cap_add:
+      - CAP_NET_ADMIN
+      - CAP_NET_RAW
+      - CAP_SYS_NICE
+    volumes:
+      - ./suricata/etc:/etc/suricata
+      - ./suricata/var/log:/var/log/suricata
+      - ./suricata/rules:/etc/suricata/rules
+      - ./suricata/scripts:/scripts
+    network_mode: host
+    depends_on:
+      - victim
+    command: [
+      "/scripts/setup.sh"
+    ]
+
+  attacker:
+    image: ubuntu:noble
+    container_name: attacker
+    networks:
+      - suricata_net
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./attacker/scripts:/scripts
+    command: [
+      "/scripts/setup.sh"
+    ]
+    depends_on:
+      - victim
+
+  victim:
+    image: alpine:latest
+    container_name: victim
+    networks:
+      - suricata_net
+    tty: true
+    ports:
+      - 80:80
+    stdin_open: true
+    command: [
+      "sh", "-c", "apk add --no-cache python3 && python3 -m http.server 80"
+    ]
+
+networks:
+  suricata_net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
