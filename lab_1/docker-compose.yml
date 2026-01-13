@@ -1,24 +1,4 @@
 services:
-  suricata:
-    image: openeuler/suricata:latest
-    container_name: suricata_ips
-    privileged: true
-    cap_add:
-      - CAP_NET_ADMIN
-      - CAP_NET_RAW
-      - CAP_SYS_NICE
-    volumes:
-      - ./suricata/etc:/etc/suricata
-      - ./suricata/var/log:/var/log/suricata
-      - ./suricata/rules:/etc/suricata/rules
-      - ./suricata/scripts:/scripts
-    network_mode: host
-    depends_on:
-      - victim
-    command: [
-      "/scripts/setup.sh"
-    ]
-
   attacker:
     image: ubuntu:noble
     container_name: attacker
@@ -50,6 +30,3 @@ services:
 networks:
   suricata_net:
     driver: bridge
-    ipam:
-      config:
-        - subnet: 172.20.0.0/16
