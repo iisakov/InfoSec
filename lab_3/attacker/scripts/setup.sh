@@ -1,140 +1,148 @@
 #!/bin/bash
 
-echo "=== Установка инструментов для атакующей машины (Ubuntu Noble) ==="
+# Отключаем любые интерактивные запросы
+export DEBIAN_FRONTEND=noninteractive
+export NEEDRESTART_MODE=a
 
-# Обновление системы
-apt-get update && apt-get upgrade -y
+# Устанавливаем локаль, чтобы не было предупреждений
+ln -fs /usr/share/zoneinfo/UTC /etc/localtime
+echo "LC_ALL=C.UTF-8" >> /etc/environment
+echo "LANG=C.UTF-8" >> /etc/environment
+
+# Обновление системы (полностью автоматическое)
+echo "=== Обновление системы ==="
+apt-get update -yq
+apt-get upgrade -yq
+apt-get autoremove -yq
 
 # Установка базовых утилит
-apt-get install -y \
-  vim \
-  nano \
-  curl \
-  wget \
-  git \
-  htop \
-  net-tools \
-  iputils-ping \
-  iproute2 \
-  dnsutils
+echo "=== Установка базовых утилит ==="
+apt-get install -yq --no-install-recommends \
+    ca-certificates \
+    apt-transport-https \
+    software-properties-common \
+    curl \
+    wget \
+    gnupg \
+    lsb-release
 
-# Установка инструментов для эксплуатации уязвимостей
+# Добавляем репозиторий Metasploit
+echo "=== Добавление репозиториев ==="
+curl -sSL https://apt.metasploit.com/metasploit-framework.gpg.key | gpg --dearmor > /etc/apt/trusted.gpg.d/metasploit.gpg
+echo "deb [arch=amd64] https://apt.metasploit.com/ noble main" > /etc/apt/sources.list.d/metasploit.list
 
-# 1. Сканирование и разведка
-apt-get install -y \
-  nmap \
-  netcat-openbsd \
-  telnet
+# Обновляем после добавления репозиториев
+apt-get update -yq
 
-# 2. Python и инструменты разработки
-apt-get install -y \
-  python3 \
-  python3-pip \
-  python3-venv \
-  python3-dev \
-  python2.7 \
-  python2.7-dev \
-  gcc \
-  make \
-  libssl-dev \
-  libffi-dev
+# Установка всех инструментов одним списком
+echo "=== Установка инструментов для атак ==="
+apt-get install -yq --no-install-recommends \
+    # Базовые утилиты
+    vim \
+    nano \
+    htop \
+    net-tools \
+    iputils-ping \
+    iproute2 \
+    dnsutils \
+    telnet \
+    file \
+    jq \
+    # Сканирование и разведка
+    nmap \
+    netcat-openbsd \
+    # Python и инструменты разработки
+    python3 \
+    python3-pip \
+    python3-venv \
+    python3-dev \
+    python2.7 \
+    python2.7-dev \
+    gcc \
+    make \
+    build-essential \
+    libssl-dev \
+    libffi-dev \
+    # Инструменты для сервисов
+    redis-tools \
+    smbclient \
+    openjdk-17-jre-headless \
+    awscli \
+    openssh-client \
+    hydra \
+    # Metasploit Framework
+    metasploit-framework \
+    # Дополнительные инструменты
+    sqlmap \
+    nikto \
+    tcpdump \
+    wireshark-common
 
-# 3. Инструменты для конкретных сервисов
-apt-get install -y \
-  redis-tools \
-  smbclient \
-  openjdk-17-jre-headless \
-  jq \
-  awscli \
-  openssh-client \
-  hydra
-
-# 4. Metasploit Framework (альтернатива для Ubuntu)
-apt-get install -y \
-  metasploit-framework
-
-# 5. Дополнительные инструменты
-apt-get install -y \
-  file \
-  sqlmap \
-  nikto \
-  john \
-  hashcat \
-  tcpdump \
-  wireshark-common
-
-# Установка Python библиотек через pip
+# Python библиотеки
 echo "=== Установка Python библиотек ==="
-pip3 install --upgrade pip
-pip3 install \
-  requests \
-  beautifulsoup4 \
-  lxml \
-  colorama \
-  pycryptodome \
-  paramiko \
-  scapy \
-  pwntools \
-  impacket
+pip3 install --no-input --upgrade pip setuptools wheel
+pip3 install --no-input \
+    requests \
+    beautifulsoup4 \
+    lxml \
+    colorama \
+    pycryptodome \
+    paramiko \
+    scapy \
+    pwntools \
+    impacket \
+    boto3 \
+    redis
 
-# Создание Python2 окружения для старых эксплойтов
-echo "=== Настройка Python2 для старых эксплойтов ==="
-curl -sS https://bootstrap.pypa.io/pip/2.7/get-pip.py | python2.7
-pip2 install \
-  virtualenv==16.7.10 \
-  requests==2.27.1
+# Python2 для старых эксплойтов
+echo "=== Настройка Python2 ==="
+curl -sS https://bootstrap.pypa.io/pip/2.7/get-pip.py | python2.7 - 2>/dev/null
+pip2 install --no-input virtualenv==16.7.10 requests==2.27.1 2>/dev/null || true
 
-# Установка эксплойтов и утилит
-echo "=== Клонирование полезных репозиториев ==="
+# Клонирование эксплойтов
+echo "=== Загрузка эксплойтов ==="
 cd /opt
+git clone --depth 1 https://github.com/opsxcq/exploit-CVE-2017-7494.git 2>/dev/null || echo "Не удалось клонировать Samba эксплойт"
 
-# Клонирование эксплойта для Samba (CVE-2017-7494)
-git clone https://github.com/opsxcq/exploit-CVE-2017-7494.git /opt/exploit-CVE-2017-7494
-
-# Клонирование Vulhub эксплойтов
-git clone https://github.com/vulhub/vulhub.git /opt/vulhub
-
-# Создание удобных алиасов
-echo "=== Создание алиасов ==="
-cat >> ~/.bashrc << 'EOF'
-
-# Алиасы для удобства
+# Настройка окружения
+echo "=== Настройка окружения ==="
+cat > /root/.bashrc << 'EOF'
+export PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 alias ll='ls -la'
 alias cls='clear'
 alias py='python3'
 alias py2='python2.7'
 alias msf='msfconsole'
-
-# Быстрый переход к эксплойтам
-alias cd-exploits='cd /opt/exploit-CVE-2017-7494'
-alias cd-vulhub='cd /opt/vulhub'
-
-# Проверка сетевых соединений
-alias check-ports='netstat -tulpn'
-alias check-ip='ip a'
-
+alias cd-exploits='cd /opt/exploit-CVE-2017-7494 2>/dev/null || echo "Директория с эксплойтами не найдена"'
 EOF
 
-# Применение изменений
-source ~/.bashrc
+# Создаем простой скрипт для проверки установки
+cat > /usr/local/bin/check-tools << 'EOF'
+#!/bin/bash
+echo "Проверка установленных инструментов:"
+echo "-----------------------------------"
+which nmap && echo "✓ nmap"
+which nc && echo "✓ netcat"
+which python3 && echo "✓ python3"
+which python2.7 && echo "✓ python2.7"
+which redis-cli && echo "✓ redis-cli"
+which smbclient && echo "✓ smbclient"
+which msfconsole && echo "✓ metasploit"
+which java && echo "✓ java"
+which aws && echo "✓ awscli"
+echo "-----------------------------------"
+EOF
 
-# Настройка времени для корректных логов
-apt-get install -y tzdata
-ln -fs /usr/share/zoneinfo/UTC /etc/localtime
-dpkg-reconfigure --frontend noninteractive tzdata
+chmod +x /usr/local/bin/check-tools
 
-# Финальная очистка
-apt-get autoremove -y
+# Очистка кэша для уменьшения размера
+echo "=== Очистка кэша ==="
+apt-get autoremove -yq
 apt-get clean
+rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-echo "=== Установка завершена! ==="
-echo "Доступные инструменты:"
-echo "- nmap, netcat, telnet"
-echo "- Python 3.x и 2.7"
-echo "- Metasploit Framework"
-echo "- Redis, SMB, SSH клиенты"
-echo "- Эксплойт для SambaCry в /opt/exploit-CVE-2017-7494"
-echo ""
-echo "Для начала работы выполните:"
-echo "docker exec -it attacker bash"
-echo "source ~/.bashrc"
+echo "========================================"
+echo "Установка завершена!"
+echo "Для проверки инструментов: check-tools"
+echo "Для доступа к контейнеру: docker exec -it attacker bash"
+echo "========================================"
