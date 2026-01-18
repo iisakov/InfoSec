@@ -14,6 +14,7 @@ services:
     ]
     volumes:
       - ./attacker/scripts:/scripts
+      - ./attacker/files:/files
 
   victim-activemq:
     image: vulhub/activemq:5.16.5
