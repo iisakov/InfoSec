@@ -34,3 +34,15 @@ pip3 install --no-input --break-system-packages \
     boto3
 
 echo "Минимальный набор установлен!"
+echo "Контейнер продолжает работу..."
+echo "Для доступа выполните: docker exec -it attacker bash"
+echo "IP: 172.20.0.10"
+echo "Доступные цели:"
+echo "  ActiveMQ:   172.20.0.101:61616,8161"
+echo "  Redis:      172.20.0.102:6379"
+echo "  MinIO:      172.20.0.103:9000,9001"
+echo "  Samba:      172.20.0.104:445"
+echo "  Jenkins:    172.20.0.105:8080"
+
+# Держим контейнер запущеным
+tail -f /dev/null
