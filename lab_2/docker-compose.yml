@@ -1,0 +1,32 @@
+services:
+  attacker:
+    image: ubuntu:noble
+    container_name: attacker
+    networks:
+      - suricata_net
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./attacker/scripts:/scripts
+    command: [
+      "/scripts/setup.sh"
+    ]
+    depends_on:
+      - victim
+
+  victim:
+    image: alpine:latest
+    container_name: victim
+    networks:
+      - suricata_net
+    tty: true
+    ports:
+      - 80:80
+    stdin_open: true
+    command: [
+      "sh", "-c", "apk add --no-cache python3 && python3 -m http.server 80"
+    ]
+
+networks:
+  suricata_net:
+    driver: bridge
