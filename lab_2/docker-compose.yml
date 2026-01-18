@@ -1,13 +1,58 @@
 services:
-  attacker:
+  attacker-0:
     image: ubuntu:noble
-    container_name: attacker
+    container_name: attacker-0
     networks:
       - suricata_net
     tty: true
     stdin_open: true
     volumes:
-      - ./attacker/scripts:/scripts
+      - ./attacker-0/scripts:/scripts
+    command: [
+      "/scripts/setup.sh"
+    ]
+    depends_on:
+      - victim
+
+  attacker-ss:
+    image: ubuntu:noble
+    container_name: attacker-ss
+    networks:
+      - suricata_net
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./attacker-ss/scripts:/scripts
+    command: [
+      "/scripts/setup.sh"
+    ]
+    depends_on:
+      - victim
+
+  attacker-su:
+    image: ubuntu:noble
+    container_name: attacker-su
+    networks:
+      - suricata_net
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./attacker-su/scripts:/scripts
+    command: [
+      "/scripts/setup.sh"
+    ]
+    depends_on:
+      - victim
+
+  attacker-sx:
+    image: ubuntu:noble
+    container_name: attacker-sx
+    networks:
+      - suricata_net
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./attacker-sx/scripts:/scripts
     command: [
       "/scripts/setup.sh"
     ]
