@@ -1,6 +1,6 @@
 services:
   attacker:
-    image: kalilinux/kali-rolling:latest
+    image: ubuntu:noble
     container_name: attacker
     hostname: attacker
     networks:
