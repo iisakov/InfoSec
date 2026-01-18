@@ -11,6 +11,8 @@ services:
     command: [
       "/scripts/setup.sh"
     ]
+    volumes:
+      - ./attacker/scripts/sh:/scripts/setup.sh
 
   victim-activemq:
     image: vulhub/activemq:5.16.5
