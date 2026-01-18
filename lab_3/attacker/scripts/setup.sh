@@ -10,7 +10,7 @@ apt-get update -y
 apt-get upgrade -y
 
 # ТОЛЬКО необходимые пакеты для лабораторной работы
-apt-get install -y --no-install-recommends \
+apt-get install -y \
     vim \
     curl \
     wget \
