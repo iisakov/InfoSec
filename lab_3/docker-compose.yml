@@ -16,24 +16,26 @@ services:
       - ./attacker/scripts:/scripts
       - ./attacker/files:/files
 
-  victim-django:
-    image: vulhub/django:1.11.4
-    container_name: victim-django
-    hostname: victim-django
-    networks:
-      vulnnet:
-        ipv4_address: 172.20.0.108
-    ports:
-      - "8000:8000"
-    environment:
-      DJANGO_SUPERUSER_USERNAME: admin
-      DJANGO_SUPERUSER_PASSWORD: admin
-      DJANGO_SUPERUSER_EMAIL: admin@example.com
+  image: postgres:13-alpine
+  container_name: victim-postgres
+  networks:
+    vulnnet:
+      ipv4_address: 172.20.0.110
+  environment:
+    POSTGRES_DB: django
+    POSTGRES_USER: django
+    POSTGRES_PASSWORD: django
 
-volumes:
-  minio_data1:
-  minio_data2:
-  minio_data3:
+victim-django:
+  image: vulhub/django:1.10.8
+  container_name: victim-django
+  networks:
+    vulnnet:
+      ipv4_address: 172.20.0.106
+  ports:
+    - "8000:8000"
+  depends_on:
+    - victim-postgres
 
 networks:
   vulnnet:
