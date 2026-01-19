@@ -17,7 +17,7 @@ services:
       - ./attacker/files:/files
 
   victim-django:
-    image: vulhub/django:4.0.5
+    image: vulhub/django:1.11.4
     container_name: victim-django
     hostname: victim-django
     networks:
