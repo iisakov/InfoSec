@@ -149,6 +149,16 @@ services:
     ports:
       - "5050:5050"
 
+  victim-django:
+    image: vulhub/django:4.0.5
+    container_name: victim-django
+    hostname: victim-django
+    networks:
+      vulnnet:
+        ipv4_address: 172.20.0.108
+    ports:
+      - "8000:8000"
+
 volumes:
   minio_data1:
   minio_data2:
