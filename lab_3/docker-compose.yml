@@ -29,8 +29,6 @@ services:
       DJANGO_SUPERUSER_USERNAME: admin
       DJANGO_SUPERUSER_PASSWORD: admin
       DJANGO_SUPERUSER_EMAIL: admin@example.com
-    stdin_open: true
-    tty: true
 
 volumes:
   minio_data1:
