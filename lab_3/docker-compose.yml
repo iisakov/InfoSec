@@ -25,6 +25,10 @@ services:
         ipv4_address: 172.20.0.108
     ports:
       - "8000:8000"
+    environment:
+      DJANGO_SUPERUSER_USERNAME: admin
+      DJANGO_SUPERUSER_PASSWORD: admin
+      DJANGO_SUPERUSER_EMAIL: admin@example.com
 
 volumes:
   minio_data1:
