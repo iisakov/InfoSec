@@ -129,6 +129,26 @@ services:
     environment:
       - DEBUG=1
 
+  victim-grafana:
+    image: vulhub/grafana:8.5.4
+    container_name: victim-grafana
+    hostname: victim-grafana
+    networks:
+      vulnnet:
+        ipv4_address: 172.20.0.106
+    ports:
+      - "3000:3000"
+
+  victim-pgadmin:
+    image: vulhub/pgadmin:9.10
+    container_name: victim-pgadmin
+    hostname: victim-pgadmin
+    networks:
+      vulnnet:
+        ipv4_address: 172.20.0.107
+    ports:
+      - "5050:5050"
+
 volumes:
   minio_data1:
   minio_data2:
